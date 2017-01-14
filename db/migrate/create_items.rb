@@ -1,7 +1,8 @@
 class CreateItems < ActiveRecord::Migration
   def self.up
-    create_table :posts do |t|
-      t.string text
+    create_table :items do |t|
+      t.string :text
+      t.timestamps
     end
   end
 
